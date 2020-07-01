@@ -21,7 +21,7 @@ function startGame(){
        cell.classList.remove(CIRCLE)
        cell.classList.remove(X)
        cell.innerHTML=""
-       text.innerHTML=""
+       text.innerHTML="Let's Start"
        cell.addEventListener("click", clickHandler, {once:true})   
    }
    restartBtn.innerHTML="Restart"
@@ -73,7 +73,7 @@ function winningDecission () {
          return(" Match Draw")
    }
   }else{
-    return ""
+    return "Let's Start"
   }
 }
 const endGame = () => {
